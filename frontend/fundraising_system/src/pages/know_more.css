@@ -1,0 +1,28 @@
+/* Root Variables */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #168d8f;
+  }
+  
+  /* Know More Page */
+  .know-more-page {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    min-height: 100vh;
+   
+  }
+  
+  /* Page Title */
+  .know-more-page h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .know-more-page p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+  

@@ -1,0 +1,61 @@
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome-section {
+  text-align: center;
+  padding: 30px 20px;
+  color: white;
+  animation: fadeSlideIn 1.2s ease-in-out;
+  
+  background: rgba(255, 255, 255, 0.1); 
+  border-radius: 15px;
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); 
+  
+}
+
+
+.welcome-section h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  animation: fadeSlideIn 1.5s ease-in-out;
+}
+
+.welcome-section>h1>span{
+   color: rgb(190, 213, 84);
+   text-transform: capitalize;
+   font-size: 2.5rem;
+}
+
+.welcome-text {
+  font-size: 18px;
+  max-width: 1000px;
+  margin: 15px auto;
+  line-height: 1.6;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  animation: fadeIn 1.8s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .welcome-section h1{
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .welcome-section h1{
+    font-size: 2rem;
+  }
+}

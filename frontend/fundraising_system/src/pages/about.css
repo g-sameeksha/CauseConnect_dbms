@@ -1,0 +1,86 @@
+/* Root Variables for Consistent Colors */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #168d8f;
+  }
+  
+  /* General Page Styling */
+  .about-page {
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    min-height: 100vh;
+  }
+  
+  /* Hero Section */
+  .about-hero {
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    padding: 50px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .about-hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: grey;
+  }
+  
+  /* Mission Section */
+  .mission-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mission-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .mission-section p {
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: grey;
+  }
+  
+  /* Accordion Section */
+  .accordion-item {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .accordion-button {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .accordion-button:hover {
+    background: rgba(255, 255, 255, 0.3) !important;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none !important;
+  }
+  
+  .accordion-body {
+    color: white;
+    font-size: 16px;
+  }
+  
+  

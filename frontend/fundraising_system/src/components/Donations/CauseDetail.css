@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #1a656c;
+    --color-light: #f8f9fa;
+    --text-dark: #333;
+    --text-muted: #6c757d;
+    --btn-gradient: linear-gradient(to right, #168d8f, #136b6d);
+  }
+  
+  .cause-detail-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(
+      to bottom right, 
+      rgba(255, 255, 255, 0.3), 
+      rgba(255, 255, 255, 0.1)
+    ); 
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(251, 251, 251, 0.1);
+    text-align: center;
+    backdrop-filter: blur(15px);  
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(146, 146, 146, 0.3);
+  }
+  
+  h1 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  hr {
+    border: 3px solid #819495;
+    margin-bottom: 20px;
+  }
+  
+  .cause-detail-section {
+    display: flex;
+    flex-direction: column;
+     align-items: flex-start;  
+  text-align: left; 
+  padding: 20px;
+  max-width: 600px; 
+  margin: 0 auto;
+
+  }
+  
+  .cause-detail-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 20px;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  p strong {
+    color: #97bcbb;
+  }
+  
+  span {
+    font-weight: bold;
+  }
+  
+  .gradient-button {
+    background: var(--btn-gradient);
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .gradient-button:hover {
+    background: linear-gradient(to right, #136b6d, #168d8f);
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .cause-detail-container {
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  }
+  

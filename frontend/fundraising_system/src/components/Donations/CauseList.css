@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #168d8f;
+    --color-light: #f8f9fa;
+    --text-dark: #333;
+    --text-muted: #6c757d;
+    --btn-gradient: linear-gradient(to right, #168d8f, #136b6d);
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.title {
+    color: var(--color-light);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 📌 Responsive Grid Layout */
+.cause-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Auto adjusts */
+    gap: 20px;
+}
+
+/* 📌 Rectangular Cause Cards */
+.donate-cause-card {
+    background: rgba(255, 255, 255, 0.2); /* Transparent white */
+    backdrop-filter: blur(10px); /* Blurry glass effect */
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    max-height: 500px;
+    padding: 20px;
+}
+
+/* 📌 Hover Effect */
+.donate-cause-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.3); /* Slightly brighter on hover */
+}
+
+/* 📌 Image Styling */
+.cause-image {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
+/* 📌 Content Area */
+.cause-content {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-light);
+}
+
+.card-text {
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+/* 📌 Target & Raised Details */
+.cause-details {
+    font-size: 0.9rem;
+    color: #0c3126
+}
+
+/* 📌 Gradient Button */
+.gradient-button {
+    background: var(--btn-gradient);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+

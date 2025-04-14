@@ -1,0 +1,113 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #168d8f;
+}
+
+.admin-profile-container {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  min-height: 100vh;
+  padding: 40px 10%;
+  color: white;
+}
+
+.loading-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* Flexbox Layout for Admin & Organization Section */
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  
+}
+
+.table-responsive {
+  overflow-x: auto;
+  max-width: 100%;
+  
+}
+
+.custom-table {
+  width: 100%;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+
+}
+
+.custom-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.info-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 20px;
+}
+
+.info-card h5 {
+  font-weight: bold;
+}
+
+.organization-img {
+  width: 80%;
+  border-radius: 10px;
+  max-height: 200px;
+  object-fit: contain;
+  
+}
+
+/* Causes Section */
+.causes-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  color: white;
+}
+
+
+/* Cause List */
+.list-group-item {
+  background: rgba(255, 255, 255, 0.155);
+  border: none;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border-left: 5px solid #e67e22;
+
+}
+
+.cause-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cause-amounts p {
+  margin: 0;
+  font-weight: 600;
+ 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-section {
+    flex-direction: column;
+  }
+
+  /* Fix for table overflow on small screens */
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .table td {
+    white-space: nowrap;
+  }
+}

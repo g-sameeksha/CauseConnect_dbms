@@ -1,0 +1,60 @@
+.hero-container {
+  text-align: center;
+  padding: 20px;
+  color: white; /* Ensures all text in the container is white */
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 20px;
+  animation: scroll 20s linear infinite;
+}
+
+/* Ensure all text inside cause cards is white */
+.cause-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  min-width: 250px;
+  max-width: 250px;
+  color: white; /* Set text color to white */
+}
+
+/* Ensure h3 inside .cause-card is also white */
+.cause-card h3 {
+  color: white !important;
+}
+
+.cause-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.gradient-button {
+  background: linear-gradient(135deg, #168d8f, #000000);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.gradient-button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes scroll {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+

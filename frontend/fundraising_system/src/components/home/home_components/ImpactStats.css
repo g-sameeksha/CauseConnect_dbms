@@ -1,0 +1,57 @@
+/* Root Variables */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #168d8f;
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+  /* Impact Stats Section */
+  .impact-stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in-out;
+
+  }
+  
+  /* Individual Stat Card */
+  .stat-card {
+    background: rgba(255, 255, 255, 0.1); /* Subtle transparency */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    min-width: 180px;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .stat-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Stats Numbers */
+  .stat-card h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Descriptions */
+  .stat-card p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 5px;
+  }
+  

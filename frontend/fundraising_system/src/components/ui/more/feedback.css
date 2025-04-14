@@ -1,0 +1,66 @@
+/* Root Variables */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #168d8f;
+  }
+  
+  /* Feedback Section Container */
+  .feedback {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 12px;
+    margin: 30px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Section Heading */
+  .feedback h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  /* Feedback Steps Container */
+  .feedback-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Individual Feedback Card */
+  .feedback-card {
+    background: rgba(89, 89, 89, 0.455);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease-in-out;
+    border-left: 1px solid orange;
+  }
+  
+  .feedback-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Icon Styling */
+  .feedback-card .icon {
+    font-size: 40px;
+  }
+  
+  /* Text Styling */
+  .feedback-card h3 {
+    font-size: 25px;
+    margin: 0;
+  }
+  
+  .feedback-card p {
+    font-size: 18px;
+    opacity: 0.9;
+    max-width: 600px;
+    color: rgb(134, 134, 134);
+
+  }
+  

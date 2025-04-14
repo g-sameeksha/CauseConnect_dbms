@@ -1,0 +1,12 @@
+.cta-section {
+    text-align: center;
+    padding: 40px;
+    color: white;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
